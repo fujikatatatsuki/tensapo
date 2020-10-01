@@ -21,4 +21,43 @@ class Cost < ApplicationRecord
     validates :car_ownership_id_id
     validates :necessity_of_attending_school_id
   end
+
+  # 半角数字のみ入力可能
+  with_options format: { with: /\A[0-9]+\z/, message: '半角数字で入力してください' } do
+  validates :
+  t.integer :health_insurance_premium_price
+  t.integer :pension_price
+  t.integer :resident_tax_price
+  t.integer :income_tax_price
+  t.integer :other_taxes
+  t.integer :food_cost
+  t.integer :expendables_cost
+  t.integer :medical_cost
+  t.integer :other_life_costs
+  t.integer :moving_cost
+  t.integer :rent
+  t.integer :security_deposit
+  t.integer :key_money
+  t.integer :administrative_fee
+  t.integer :other_moves
+  t.integer :electricity_charges
+  t.integer :gas_charges
+  t.integer :water_charges
+  t.integer :other_utility_costs
+  t.integer :loan_monthly_payment
+  t.integer :parking_cost
+  t.integer :water_cost
+  t.integer :fuel_cost
+  t.integer :vehicle_inspection_fee
+  t.integer :car_tax
+  t.integer :other_cars
+  t.integer :traffic＿cost
+  t.integer :phone＿cost
+  t.integer :other_communication_costs
+  t.integer :scholarship
+  t.integer :debt
+  t.integer :other_monthly_payment
+  t.integer :admission_cost
+  t.integer :monthly_tuition
+  t.integer :other_tuitions
 end
