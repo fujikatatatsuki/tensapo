@@ -62,7 +62,7 @@
 | electricity_charges              | integer |             | # （光熱費）電気代
 | gas_charges                      | integer |             | # （光熱費）ガス代
 | water_charges                    | integer |             | # （光熱費）水道代
-| other_utility _costs             | integer |             | # （光熱費）その他
+| other_utility_costs              | integer |             | # （光熱費）その他
 | car_ownership_id                 | string  | null: false | # （車）車の所有の有無
 | loan_monthly_payment             | integer |             | # （車）ローン月払い
 | parking_cost                     | integer |             | # （車）駐車場料金
