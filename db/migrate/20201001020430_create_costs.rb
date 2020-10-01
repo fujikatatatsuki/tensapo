@@ -16,7 +16,7 @@ class CreateCosts < ActiveRecord::Migration[6.0]
       t.integer :other_life_costs                               # （生活費）その他
       t.string  :whether_to_move_id               , null: false # （引越し）引越しの有無
       t.integer :moving_cost                                    # （引越し）引越し費用
-      t.integer :rent                             , null: false # （引越し）家賃
+      t.integer :rent                                           # （引越し）家賃
       t.integer :security_deposit                               # （引越し）敷金
       t.integer :key_money                                      # （引越し）礼金
       t.integer :administrative_fee                             # （引越し）事務手数料

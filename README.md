@@ -43,13 +43,13 @@
 | Column                           | Type    | Options     |
 |----------------------------------|---------|-------------|
 | health_insurance_premium_id      | string  | null: false | # （税金）健康保険料の手続き
-| health_insurance_premium_price   | integer | null: false | # （税金）健康保険料支払額
+| health_insurance_premium_price   | integer |             | # （税金）健康保険料支払額
 | pension_id                       | string  | null: false | # （税金）年金の手続き
-| pension_price                    | integer | null: false | # （税金）年金支払額
+| pension_price                    | integer |             | # （税金）年金支払額
 | resident_tax_id                  | string  | null: false | # （税金）住民税の手続き
-| resident_tax_price               | integer | null: false | # （税金）住民税支払額
+| resident_tax_price               | integer |             | # （税金）住民税支払額
 | income_tax_id                    | string  | null: false | # （税金）所得税の手続き
-| income_tax_price                 | integer | null: false | # （税金）所得税支払額
+| income_tax_price                 | integer |             | # （税金）所得税支払額
 | other_taxes                      | integer |             | # （税金）その他
 | food_cost                        | integer |             | # （生活費） 食費
 | expendables_cost                 | integer |             | # （生活費）消耗品費
@@ -57,7 +57,7 @@
 | other_life_costs                 | integer |             | # （生活費）その他
 | whether_to_move_id               | string  | null: false | # （引越し）引越しの有無
 | moving_cost                      | integer |             | # （引越し）引越し費用
-| rent                             | integer | null: false | # （引越し）家賃
+| rent                             | integer |             | # （引越し）家賃
 | security_deposit                 | integer |             | # （引越し）敷金
 | key_money                        | integer |             | # （引越し）礼金
 | administrative_fee               | integer |             | # （引越し）事務手数料
