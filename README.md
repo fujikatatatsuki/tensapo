@@ -42,10 +42,14 @@
 
 | Column                           | Type    | Options     |
 |----------------------------------|---------|-------------|
-| health_insurance_premium_id      | string  | null: false | # （税金）健康保険料
-| pension_id                       | string  | null: false | # （税金）年金
-| resident_tax_id                  | string  | null: false | # （税金）住民税
-| income_tax_id                    | string  | null: false | # （税金）所得税
+| health_insurance_premium_id      | string  | null: false | # （税金）健康保険料の手続き
+| health_insurance_premium_price   | integer | null: false | # （税金）健康保険料支払額
+| pension_id                       | string  | null: false | # （税金）年金の手続き
+| pension_price                    | integer | null: false | # （税金）年金支払額
+| resident_tax_id                  | string  | null: false | # （税金）住民税の手続き
+| resident_tax_price               | integer | null: false | # （税金）住民税支払額
+| income_tax_id                    | string  | null: false | # （税金）所得税の手続き
+| income_tax_price                 | integer | null: false | # （税金）所得税支払額
 | other_taxes                      | integer |             | # （税金）その他
 | food_cost                        | integer |             | # （生活費） 食費
 | expendables_cost                 | integer |             | # （生活費）消耗品費

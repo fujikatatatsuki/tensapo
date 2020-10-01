@@ -1,10 +1,14 @@
-class CreateCosts < ActiveRecord::Migration[6.0]
+　class CreateCosts < ActiveRecord::Migration[6.0]
   def change
     create_table :costs do |t|
-      t.string  :health_insurance_premium_id      , null: false # （税金）健康保険料
-      t.string  :pension_id                       , null: false # （税金）年金
-      t.string  :resident_tax_id                  , null: false # （税金）住民税
-      t.string  :income_tax_id                    , null: false # （税金）所得税
+      t.string  :health_insurance_premium_id      , null: false # （税金）健康保険料の手続き
+      t.integer :health_insurance_premium_price                 # （税金）健康保険料支払額
+      t.string  :pension_id                       , null: false # （税金）年金の手続き
+      t.integer :pension_price                                  # （税金）年金支払額
+      t.string  :resident_tax_id                  , null: false # （税金）住民税の手続き
+      t.integer :resident_tax_price                             # （税金）住民税支払額
+      t.string  :income_tax_id                    , null: false # （税金）所得税手続き
+      t.integer :income_tax_price                 , null: false # （税金）所得税支払額
       t.integer :other_taxes                                    # （税金）その他
       t.integer :food_cost                                      # （生活費） 食費
       t.integer :expendables_cost                               # （生活費）消耗品費
