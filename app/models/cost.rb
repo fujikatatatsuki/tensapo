@@ -54,7 +54,6 @@ class Cost < ApplicationRecord
     validates :phone_cost
     validates :other_communication_costs
     validates :scholarship
-    validates :debt
     validates :other_monthly_payment
     validates :admission_cost
     validates :monthly_tuition
