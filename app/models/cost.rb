@@ -6,7 +6,7 @@ class Cost < ApplicationRecord
   belongs_to_active_hash :resident_tax
   belongs_to_active_hash :income_tax
   belongs_to_active_hash :whether_to_move
-  belongs_to_active_hash :payment_of_utility_bills
+  belongs_to_active_hash :payment_of_utility_bill
   belongs_to_active_hash :car_ownership
   belongs_to_active_hash :necessity_of_attending_school
 

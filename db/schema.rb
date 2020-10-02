@@ -28,12 +28,12 @@ ActiveRecord::Schema.define(version: 2020_10_01_020430) do
     t.integer "other_life_costs"
     t.string "whether_to_move_id", null: false
     t.integer "moving_cost"
-    t.integer "rent", null: false
+    t.integer "rent"
     t.integer "security_deposit"
     t.integer "key_money"
     t.integer "administrative_fee"
     t.integer "other_moves"
-    t.string "payment_of_utility_bills_id", null: false
+    t.string "payment_of_utility_bill_id", null: false
     t.integer "electricity_charges"
     t.integer "gas_charges"
     t.integer "water_charges"
