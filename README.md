@@ -64,7 +64,6 @@
 | other_moves                      | integer |             | # （引越し）その他
 
 | payment_of_utility_bill_id      | string  | null: false | # （光熱費）光熱費の支払の有無
-
 | electricity_charges              | integer |             | # （光熱費）電気代
 | gas_charges                      | integer |             | # （光熱費）ガス代
 | water_charges                    | integer |             | # （光熱費）水道代
@@ -78,12 +77,15 @@
 | vehicle_inspection_fee           | integer |             | # （車）車検代
 | car_tax                          | integer |             | # （車）車税
 | other_cars                       | integer |             | # （車）その他
-| traffic＿cost                    | integer |             | # （月額支払）交通費
-| phone＿cost                      | integer |             | # （月額支払）携帯料金
+
+| traffic_cost                     | integer |             | # （月額支払）交通費
+
+| phone_cost                       | integer |             | # （月額支払）携帯料金
 | other_communication_costs        | integer |             | # （月額支払）その他通信費
 | scholarship                      | integer |             | # （月額支払）奨学金
 | debt                             | integer |             | # （月額支払）借金
 | other_monthly_payment            | integer |             | # （月額支払）その他
+
 | necessity_of_attending_school_id | string  | null: false | # （学費）通学の必要性
 | admission_cost                   | integer |             | # （学費）入学費
 | monthly_tuition                  | integer |             | # （学費）月学費

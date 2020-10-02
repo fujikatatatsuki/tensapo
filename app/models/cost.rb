@@ -50,8 +50,8 @@ class Cost < ApplicationRecord
     validates :vehicle_inspection_fee
     validates :car_tax
     validates :other_cars
-    validates :traffic＿cost
-    validates :phone＿cost
+    validates :traffic_cost
+    validates :phone_cost
     validates :other_communication_costs
     validates :scholarship
     validates :debt
