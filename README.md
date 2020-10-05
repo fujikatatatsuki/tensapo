@@ -42,14 +42,10 @@
 
 | Column                           | Type    | Options     |
 |----------------------------------|---------|-------------|
-| health_insurance_premium_id      | string  | null: false | # （税金）健康保険料の手続き
-| health_insurance_premium_price   | integer |             | # （税金）健康保険料支払額
-| pension_id                       | string  | null: false | # （税金）年金の手続き
-| pension_price                    | integer |             | # （税金）年金支払額
-| resident_tax_id                  | string  | null: false | # （税金）住民税の手続き
-| resident_tax_price               | integer |             | # （税金）住民税支払額
-| income_tax_id                    | string  | null: false | # （税金）所得税の手続き
-| income_tax_price                 | integer |             | # （税金）所得税支払額
+| health_insurance_premium_id      | string  | null: false | # （税金）健康保険料
+| pension_id                       | string  | null: false | # （税金）年金
+| resident_tax_id                  | string  | null: false | # （税金）住民税
+| income_tax_id                    | string  | null: false | # （税金）所得税
 | other_taxes                      | integer |             | # （税金）その他
 | food_cost                        | integer |             | # （生活費） 食費
 | expendables_cost                 | integer |             | # （生活費）消耗品費
@@ -57,16 +53,16 @@
 | other_life_costs                 | integer |             | # （生活費）その他
 | whether_to_move_id               | string  | null: false | # （引越し）引越しの有無
 | moving_cost                      | integer |             | # （引越し）引越し費用
-| rent                             | integer |             | # （引越し）家賃
+| rent                             | integer | null: false | # （引越し）家賃
 | security_deposit                 | integer |             | # （引越し）敷金
 | key_money                        | integer |             | # （引越し）礼金
 | administrative_fee               | integer |             | # （引越し）事務手数料
 | other_moves                      | integer |             | # （引越し）その他
-| payment_of_utility_bill_id       | string  | null: false | # （光熱費）光熱費の支払の有無
+| payment_of_utility_bills_id      | string  | null: false | # （光熱費）光熱費の支払の有無
 | electricity_charges              | integer |             | # （光熱費）電気代
 | gas_charges                      | integer |             | # （光熱費）ガス代
 | water_charges                    | integer |             | # （光熱費）水道代
-| other_utility_costs              | integer |             | # （光熱費）その他
+| other_utility _costs             | integer |             | # （光熱費）その他
 | car_ownership_id                 | string  | null: false | # （車）車の所有の有無
 | loan_monthly_payment             | integer |             | # （車）ローン月払い
 | parking_cost                     | integer |             | # （車）駐車場料金
@@ -75,10 +71,11 @@
 | vehicle_inspection_fee           | integer |             | # （車）車検代
 | car_tax                          | integer |             | # （車）車税
 | other_cars                       | integer |             | # （車）その他
-| traffic_cost                     | integer |             | # （月額支払）交通費
-| phone_cost                       | integer |             | # （月額支払）携帯料金
+| traffic＿cost                    | integer |             | # （月額支払）交通費
+| phone＿cost                      | integer |             | # （月額支払）携帯料金
 | other_communication_costs        | integer |             | # （月額支払）その他通信費
 | scholarship                      | integer |             | # （月額支払）奨学金
+| debt                             | integer |             | # （月額支払）借金
 | other_monthly_payment            | integer |             | # （月額支払）その他
 | necessity_of_attending_school_id | string  | null: false | # （学費）通学の必要性
 | admission_cost                   | integer |             | # （学費）入学費
