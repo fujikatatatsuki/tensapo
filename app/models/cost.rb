@@ -17,8 +17,8 @@ class Cost < ApplicationRecord
     validates :resident_tax_id
     validates :income_tax_id
     validates :whether_to_move_id
-    validates :payment_of_utility_bills_id
-    validates :car_ownership_id_id
+    validates :payment_of_utility_bill_id
+    validates :car_ownership_id
     validates :necessity_of_attending_school_id
   end
 
